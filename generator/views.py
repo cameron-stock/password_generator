@@ -5,8 +5,8 @@ from django.http import HttpResponse
 
 
 def home(request):
-    return HttpResponse('Hello there!')
+    return render(request, 'generator/home.html', {'password': '1234'})
 
 
-def page(request):
-    return HttpResponse('General Kenobi!')
+def password(request):
+    return render(request, 'generator/password.html')
