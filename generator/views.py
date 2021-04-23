@@ -9,6 +9,10 @@ def home(request):
     return render(request, 'generator/home.html', {'password': '1234'})
 
 
+def about(request):
+    return render(request, 'generator/about.html')
+
+
 def password(request):
 
     characters = list('abcdefghijklmnopqrstuvwxyz')
